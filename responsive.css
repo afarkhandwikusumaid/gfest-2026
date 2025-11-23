@@ -1,0 +1,535 @@
+/* responsive.css */
+/* Responsive Styles for G-Fest 2026 Website */
+
+/* Tablet Devices (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Header & Navigation */
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    /* Home Section */
+    .home-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        padding: 30px 20px;
+    }
+
+    .hero-image {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        max-width: 60%;
+    }
+
+    .hero-details {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .button-group {
+        grid-column: 1;
+        grid-row: 3;
+        justify-content: center;
+        padding-left: 0;
+        margin: 20px 0;
+    }
+
+    .countdown {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .about-image {
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-details {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .social-link {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    /* Events Section */
+    .events-grid {
+        margin: 0 20px;
+        padding: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .grid-container1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Crew Section */
+    .crew-content {
+        padding: 30px 20px 0;
+    }
+
+    .section-content {
+        padding-top: 30px;
+    }
+
+    .crew-content .crew {
+        padding: 25px;
+    }
+
+    .crew-content .crew .user-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Sponsorship Section */
+    .sponsorship-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+        margin: 0 20px;
+    }
+
+    .sponsorship-item:nth-child(-n+4),
+    .sponsorship-item:nth-child(n+7):nth-child(-n+10),
+    .sponsorship-item:nth-child(n+13):nth-child(-n+16) {
+        width: 180px;
+        height: 180px;
+    }
+
+    .sponsorship-item:nth-child(5),
+    .sponsorship-item:nth-child(6),
+    .sponsorship-item:nth-child(11),
+    .sponsorship-item:nth-child(12) {
+        width: 250px;
+        height: 141px;
+    }
+}
+
+/* Mobile Devices (481px - 767px) */
+@media screen and (max-width: 767px) {
+    /* Header & Navigation */
+    header {
+        padding: 10px 15px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--primary-color);
+        flex-direction: column;
+        padding: 80px 30px 30px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 12px 15px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 24px;
+        z-index: 1100;
+    }
+
+    /* Home Section */
+    .home-content {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .hero-details h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .hero-details h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .hero-details p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 200px;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .countdown-timer {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .countdown-number {
+        font-size: 20px;
+        min-width: 60px;
+        padding: 8px 12px;
+    }
+
+    .countdown-label {
+        font-size: 12px;
+    }
+
+    /* About Section */
+    .about-content {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .about-details h2 {
+        font-size: 28px;
+    }
+
+    .about-details p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .social-link {
+        gap: 20px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Events Section */
+    .events-content {
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .events-content h1 {
+        font-size: 28px;
+    }
+
+    .events-grid {
+        margin: 0 15px;
+        padding: 15px;
+    }
+
+    .events-grid h2 {
+        font-size: 1.5rem;
+    }
+
+    .events-grid h3 {
+        font-size: 1.3rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+
+    .grid-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Crew Section */
+    .crew-content {
+        padding: 20px 15px 0;
+    }
+
+    .crew-content h1 {
+        font-size: 28px;
+    }
+
+    .section-content {
+        padding-top: 20px;
+    }
+
+    .crew-content .crew {
+        padding: 20px 15px;
+    }
+
+    .crew-content .crew .user-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .crew-content .crew .user-name {
+        font-size: 1.1rem;
+    }
+
+    .crew-content .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Sponsorship Section */
+    .sponsorship-content {
+        padding: 20px 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .sponsorship-content h1 {
+        font-size: 28px;
+    }
+
+    .sponsorship-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+        margin: 0 15px;
+    }
+
+    .sponsorship-item {
+        margin: 5px;
+        padding: 8px;
+    }
+
+    .sponsorship-item:nth-child(-n+4),
+    .sponsorship-item:nth-child(n+7):nth-child(-n+10),
+    .sponsorship-item:nth-child(n+13):nth-child(-n+16) {
+        width: 140px;
+        height: 140px;
+    }
+
+    .sponsorship-item:nth-child(5),
+    .sponsorship-item:nth-child(6),
+    .sponsorship-item:nth-child(11),
+    .sponsorship-item:nth-child(12) {
+        width: 200px;
+        height: 113px;
+        grid-column: span 2;
+    }
+}
+
+/* Small Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+    /* Header */
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .logo-image {
+        height: 40px;
+    }
+
+    .nav-menu {
+        width: 250px;
+    }
+
+    /* Home Section */
+    .hero-details h1 {
+        font-size: 24px;
+    }
+
+    .hero-details h3 {
+        font-size: 16px;
+    }
+
+    .hero-details p {
+        font-size: 14px;
+    }
+
+    .countdown-timer {
+        gap: 10px;
+    }
+
+    .countdown-number {
+        font-size: 18px;
+        min-width: 50px;
+        padding: 6px 10px;
+    }
+
+    .countdown-label {
+        font-size: 10px;
+    }
+
+    /* About Section */
+    .about-details h2 {
+        font-size: 24px;
+    }
+
+    .about-details p {
+        font-size: 14px;
+    }
+
+    /* Events Section */
+    .events-content h1 {
+        font-size: 24px;
+    }
+
+    .events-grid h2 {
+        font-size: 1.3rem;
+    }
+
+    .events-grid h3 {
+        font-size: 1.1rem;
+    }
+
+    .grid-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Crew Section */
+    .crew-content h1 {
+        font-size: 24px;
+    }
+
+    .crew-content .crew .user-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .crew-content .crew .user-name {
+        font-size: 1rem;
+    }
+
+    .crew-content .crew .user-role,
+    .crew-content .crew .user-institution {
+        font-size: 0.8rem;
+    }
+
+    /* Sponsorship Section */
+    .sponsorship-content h1 {
+        font-size: 24px;
+    }
+
+    .sponsorship-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsorship-item:nth-child(-n+4),
+    .sponsorship-item:nth-child(n+7):nth-child(-n+10),
+    .sponsorship-item:nth-child(n+13):nth-child(-n+16),
+    .sponsorship-item:nth-child(5),
+    .sponsorship-item:nth-child(6),
+    .sponsorship-item:nth-child(11),
+    .sponsorship-item:nth-child(12) {
+        width: 200px;
+        height: 200px;
+        grid-column: 1;
+    }
+
+    .sponsorship-item:nth-child(5),
+    .sponsorship-item:nth-child(6),
+    .sponsorship-item:nth-child(11),
+    .sponsorship-item:nth-child(12) {
+        height: 113px;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .nav-menu {
+        padding: 60px 20px 20px;
+        overflow-y: auto;
+    }
+
+    .nav-menu li {
+        margin: 5px 0;
+    }
+
+    .home-content {
+        padding: 20px;
+    }
+
+    .hero-image img {
+        max-width: 40%;
+    }
+
+    .countdown {
+        padding: 15px;
+    }
+}
+
+/* High Resolution Displays */
+@media screen and (min-width: 1400px) {
+    .navbar {
+        max-width: 1400px;
+    }
+
+    .events-grid,
+    .sponsorship-container {
+        max-width: 1400px;
+    }
+}
