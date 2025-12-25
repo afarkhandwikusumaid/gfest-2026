@@ -598,7 +598,6 @@
         height: 113px;
     }
     /* Feedback Section */
-    /* Feedback Section */
     .feedback-content h1 {
         font-size: 24px;
     }
@@ -676,6 +675,25 @@
     .countdown {
         padding: 15px;
     }
+    .feedback.main-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    
+    .feedback-left,
+    .feedback-right {
+        height: auto;
+        min-height: 200px;
+    }
+    
+    .feedback-form textarea {
+        min-height: 80px;
+    }
+    
+    .map-container {
+        height: 250px;
+    }
 }
 
 /* High Resolution Displays */
@@ -687,5 +705,17 @@
     .events-grid,
     .sponsorship-container {
         max-width: 1400px;
+    }
+    .feedback.main-container {
+        max-width: 1400px;
+        gap: var(--spacing-xlarge);
+    }
+    
+    .feedback-left {
+        width: 700px;
+    }
+    
+    .feedback-right {
+        width: 700px;
     }
 }
