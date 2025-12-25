@@ -462,30 +462,6 @@ section {
   text-align: justify;
 }
 
-.social-link {
-  grid-column: 1 / span 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-medium);
-  width: 100%;
-}
-
-.social-icon {
-  font-size: var(--font-size-large);
-  color: var(--primary-color);
-  transition: color 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px; /* Ukuran tetap untuk konsistensi */
-  height: 40px;
-}
-
-.social-icon:hover {
-  color: var(--secondary-color);
-}
-
 /* Event Section Styles */
 #events {
   background-color: var(--background-color);
@@ -493,7 +469,8 @@ section {
 
 .events-content {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  padding-top: 10px;
 }
 
 .events-content h1 {
@@ -642,7 +619,7 @@ section {
   background-color: var(--background-color);
 } 
 .crew-content {
-  padding-top: 50px;
+  padding-top: 30px;
   text-align: center;
 }
 .crew-content h1 {
@@ -818,17 +795,17 @@ section {
   border-radius: var(--border-radius-small);
 }
 
-/* Contact Section Styles */
-#contact {
+/* Feedback Section Styles */
+#feedback {
   background-color: var(--background-color);
 }
 
-.contact-content {
+.feedback-content {
   text-align: center;
   margin-bottom: 30px;
   padding-top: 50px;
 }
-.contact-content h1 {
+.feedback-content h1 {
   font-size: var(--font-size-xlarge);
   color: var(--accent-color);
   margin-bottom: var(--spacing-small);
@@ -836,7 +813,7 @@ section {
   display: inline-block;
 }
 
-.contact-content h1::after {
+.feedback-content h1::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -848,9 +825,235 @@ section {
   border-radius: var(--border-radius-small);
 }
 
-.contact-content p {
+.feedback-content p {
   font-size: var(--font-size-medium);
   color: var(--text-color);
   opacity: 0.8;
   margin-top: var(--spacing-large);
 }
+
+/* Feedback Section Styles */
+#feedback {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-content {
+    text-align: center;
+    margin-bottom: var(--spacing-xlarge);
+    padding-top: var(--spacing-xlarge);
+}
+
+.feedback-content h1 {
+    font-size: var(--font-size-xlarge);
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-small);
+    position: relative;
+    display: inline-block;
+}
+
+.feedback-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-small);
+}
+
+.feedback-content p {
+    font-size: var(--font-size-medium);
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: var(--spacing-large);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Main Feedback Container */
+.feedback.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-large);
+    align-items: stretch;
+}
+
+/* Left Side - Feedback Form */
+.feedback-left {
+    background: var(--white-color);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius-large);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Menambahkan height 100% */
+    width: 600px;
+}
+
+.feedback-left:hover {
+    transform: translateY(-5px);
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    flex: 1; /* Membuat form mengisi seluruh ruang yang tersedia */
+}
+
+.feedback-form div {
+    position: relative;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: var(--border-radius-medium);
+    font-size: var(--font-size-medium);
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: var(--white-color);
+    box-shadow: 0 0 0 3px rgba(255, 233, 120, 0.2);
+}
+
+.feedback-form textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.6;
+    flex: 1; /* Membuat textarea mengisi ruang yang tersedia */
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    color: #888;
+    opacity: 0.8;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 40px;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-medium);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top: auto; /* Mendorong tombol ke bawah */
+}
+
+.btn-submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 87, 34, 0.3);
+}
+
+/* Right Side - Map Section */
+.feedback-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.map-section {
+    background: var(--white-color);
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Memastikan map-section mengambil tinggi penuh */
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-section:hover {
+    transform: translateY(-5px);
+}
+
+.map-header {
+    background: var(--primary-color);
+    padding: var(--spacing-medium);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+    color: var(--text-color);
+    flex-shrink: 0; /* Mencegah header menyusut */
+}
+
+.map-header i {
+    font-size: var(--font-size-large);
+    color: var(--secondary-color);
+}
+
+.map-header h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--text-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+.map-container {
+    position: relative;
+    flex: 1; /* Membuat map-container mengisi sisa ruang */
+    min-height: 0; /* Penting untuk flexbox dengan overflow */
+}
+
+.map-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    position: absolute; /* Mengubah ke absolute */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-color);
+    padding: var(--spacing-medium);
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-content a {
+    color: var(--text-color);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium);
+    transition: color 0.3s ease;
+}
+.footer-content a:hover {
+    color: var(--secondary-color);
+}
+
+
+
