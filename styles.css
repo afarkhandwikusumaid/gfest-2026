@@ -385,7 +385,7 @@ section {
 .countdown-number {
   font-size: var(--font-size-large);
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--secondary-color);
   background: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
   border-radius: var(--border-radius);
@@ -872,6 +872,10 @@ section {
 
 .feedback-left:hover {
     transform: translateY(-5px);
+}
+
+.feedback-left .form-header {
+    color: var(--secondary-color);
 }
 
 .feedback-form {
