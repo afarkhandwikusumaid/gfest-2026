@@ -385,7 +385,7 @@ section {
 .countdown-number {
   font-size: var(--font-size-large);
   font-weight: bold;
-  color: var(--secondary-color);
+  color: var(--text-color);
   background: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
   border-radius: var(--border-radius);
@@ -559,7 +559,7 @@ section {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: var(--spacing-medium);
-  border: 3px solid var(--primary-color);
+  border: 3px solid var(--background-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
   
@@ -640,6 +640,13 @@ section {
   height: 3px;
   background-color: var(--primary-color);
   border-radius: var(--border-radius-small);
+}
+
+.crew-content p {
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-top: var(--spacing-large);
 }
 
 .section-content {
@@ -842,12 +849,12 @@ section {
 
 /* Main Feedback Container */
 .feedback.main-container {
-    max-width: 1200px;
-    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: var(--spacing-xlarge);
+    padding: 0 var(--spacing-large);
     gap: var(--spacing-large);
-    align-items: stretch;
+    max-width: 1200px;
 }
 
 /* Left Side - Feedback Form */
@@ -860,7 +867,7 @@ section {
     display: flex;
     flex-direction: column;
     height: 100%; /* Menambahkan height 100% */
-    width: 600px;
+    width: 400px;
 }
 
 .feedback-left:hover {
@@ -940,7 +947,8 @@ section {
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 400px;
+    justify-content: center;
 }
 
 .map-section {
