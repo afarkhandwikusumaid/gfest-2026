@@ -467,6 +467,7 @@ section {
   line-height: 1.6;
   opacity: 0.8;
   text-align: justify;
+  margin-top: var(--spacing-medium);
 }
 
 /* Event Section Styles */
@@ -1036,5 +1037,3 @@ section {
 .footer-content a:hover {
     color: var(--secondary-color);
 }
-
-
