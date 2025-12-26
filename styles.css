@@ -988,7 +988,7 @@ section {
 .map-header h2 {
     font-size: 1.3rem;
     margin: 0;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: var(--font-weight-semibold);
 }
 
