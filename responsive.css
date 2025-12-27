@@ -626,17 +626,17 @@
         font-size: 0.9rem;
     }
 
-    /* Sponsorship Section */
+    /* Sponsorship Section - tetap 2 columns untuk small mobile */
     .sponsorship-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         padding: 20px;
         margin: 0 10px;
     }
 
     .sponsorship-item {
-        width: 180px !important;
-        height: 180px !important;
+        width: 140px !important;
+        height: 140px !important;
         padding: 12px;
         margin: 0 auto;
     }
@@ -645,8 +645,8 @@
     .sponsorship-item:nth-child(6),
     .sponsorship-item:nth-child(11),
     .sponsorship-item:nth-child(12) {
-        width: 180px !important;
-        height: 180px !important;
+        width: 140px !important;
+        height: 140px !important;
     }
 
     /* Feedback Section */
@@ -716,6 +716,28 @@
 
     .countdown-label {
         font-size: 0.75rem;
+    }
+
+    /* Sponsorship Section - tetap 2 columns untuk extra small */
+    .sponsorship-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+        margin: 0 5px;
+    }
+
+    .sponsorship-item {
+        width: 130px !important;
+        height: 130px !important;
+        padding: 10px;
+    }
+
+    .sponsorship-item:nth-child(5),
+    .sponsorship-item:nth-child(6),
+    .sponsorship-item:nth-child(11),
+    .sponsorship-item:nth-child(12) {
+        width: 130px !important;
+        height: 130px !important;
     }
 }
 
