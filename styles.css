@@ -452,17 +452,6 @@ section {
   text-align: center;
 }
 
-.about-details h2::after {
-  content: '';
-  text-align: center;
-  display: block;
-  width: 80px;
-  height: 5px;
-  background-color: var(--primary-color);
-  margin: 10px auto 0;
-  border-radius: var(--border-radius-small);
-}
-
 .about-details p {
   font-size: var(--font-size-medium);
   color: var(--text-color);
