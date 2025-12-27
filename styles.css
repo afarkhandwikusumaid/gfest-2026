@@ -883,7 +883,6 @@ section {
 
 .feedback-left .form-header {
     color: var(--secondary-color);
-    margin-bottom: var(--spacing-large);
 }
 
 .feedback-form {
