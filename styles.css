@@ -1000,7 +1000,7 @@ section {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 .footer-content {
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .footer-content a {
     color: var(--text-color);
@@ -1011,9 +1011,10 @@ section {
 .footer-content a:hover {
     color: var(--secondary-color);
 }
-.footer-content p {
-    font-size: var(--font-size-small);
+
+.social-icon {
+    font-size: 40px;
+    margin: 0 10px;
     color: var(--text-color);
-    opacity: 0.8;
-    margin-top: var(--spacing-small);
+    transition: color 0.3s ease;
 }
