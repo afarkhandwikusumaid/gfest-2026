@@ -428,8 +428,6 @@ section {
 .about-image img {
   width: 100%;
   grid-column: 1;
-  border-radius: var(--border-radius-medium);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transform: perspective(1000px) rotateY(-5deg);
   transition: transform 0.5s ease;
 }
