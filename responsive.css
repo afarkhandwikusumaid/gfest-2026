@@ -270,6 +270,45 @@
         padding: 14px;
         font-size: 16px;
     }
+    .feedback-form textarea {
+        min-height: 160px;
+    }
+    .footer {
+        padding: var(--spacing-medium) var(--spacing-small);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-small);
+        padding: 0 var(--spacing-small);
+    }
+    
+    .footer-content a {
+        font-size: calc(var(--font-size-medium) - 2px);
+        padding: 10px 15px;
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-icon {
+        font-size: 35px;
+    }
+    
+    /* Atur teks untuk Instagram */
+    .content-grid1 a {
+        flex-direction: column;
+    }
+    
+    /* Atur teks untuk TikTok */
+    .content-grid2 a {
+        flex-direction: column;
+    }
+    
+    /* Atur teks untuk Email */
+    .content-grid3 a {
+        flex-direction: column;
+    }
 }
 
 /* Mobile Devices (481px - 767px) */
@@ -521,6 +560,41 @@
     .map-container {
         height: calc(100% - 60px);
     }
+    .footer {
+        padding: var(--spacing-small);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .content-grid1, 
+    .content-grid2, 
+    .content-grid3 {
+        padding: 5px 0;
+    }
+    
+    .footer-content a {
+        font-size: calc(var(--font-size-medium) - 4px);
+        padding: 8px 10px;
+        gap: 8px;
+        flex-direction: column;
+        min-height: 80px;
+        justify-content: center;
+    }
+    
+    .social-icon {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
+    /* Untuk teks email yang panjang, kecilkan sedikit */
+    .content-grid3 a {
+        font-size: calc(var(--font-size-medium) - 5px);
+        line-height: 1.2;
+    }
 }
 
 /* Small Mobile Devices (320px - 480px) */
@@ -680,6 +754,40 @@
     .feedback-right {
         height: 300px;
     }
+    .map-header {
+        padding: 12px;
+    }
+    .footer {
+        padding: 15px 5px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 0 5px;
+    }
+    
+    .footer-content a {
+        font-size: calc(var(--font-size-medium) - 6px);
+        padding: 6px 8px;
+        gap: 5px;
+        flex-direction: column;
+        min-height: 70px;
+    }
+    
+    .social-icon {
+        font-size: 25px;
+        margin-bottom: 3px;
+    }
+    
+    /* Untuk email dengan teks panjang */
+    .content-grid3 a {
+        font-size: calc(var(--font-size-medium) - 7px);
+        word-break: break-word;
+        white-space: normal;
+        line-height: 1.1;
+        padding: 5px 3px;
+    }
 }
 
 /* Extra Small Devices (max-width: 360px) */
@@ -738,6 +846,33 @@
     .sponsorship-item:nth-child(12) {
         width: 130px !important;
         height: 130px !important;
+    }
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    
+    .footer-content a {
+        font-size: calc(var(--font-size-medium) - 8px);
+        padding: 5px 3px;
+        min-height: 65px;
+    }
+    
+    .social-icon {
+        font-size: 22px;
+    }
+    
+    /* Sembunyikan teks "gfest2026" pada link sosial media, hanya tampilkan icon */
+    .content-grid1 a span:not(.social-icon),
+    .content-grid2 a span:not(.social-icon) {
+        display: none;
+    }
+    
+    /* Untuk email, tetap tampilkan tapi format lebih kecil */
+    .content-grid3 a {
+        font-size: 11px;
+        padding: 4px 2px;
+        min-height: 60px;
     }
 }
 
@@ -820,6 +955,26 @@
         font-size: 1.2rem;
         min-width: 50px;
         padding: 8px 10px;
+    }
+    .footer {
+        padding: 10px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .footer-content a {
+        padding: 8px 12px;
+        min-height: auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .social-icon {
+        font-size: 28px;
+        margin-bottom: 0;
     }
 }
 
