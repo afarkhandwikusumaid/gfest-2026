@@ -85,7 +85,7 @@ document.addEventListener('keydown', (e) => {
 
 // Countdown Timer
 function updateCountdown() {
-    const eventDate = new Date('Januari 21, 2026 00:00:00').getTime();
+    const eventDate = new Date('Januari 20, 2026 07:00:00').getTime();
     const now = new Date().getTime();
     const timeLeft = eventDate - now;
             
