@@ -786,7 +786,11 @@ section {
 .sponsorship-item:nth-child(5),
 .sponsorship-item:nth-child(6),
 .sponsorship-item:nth-child(11),
-.sponsorship-item:nth-child(12) {
+.sponsorship-item:nth-child(12),
+.sponsorship-item:nth-child(17),
+.sponsorship-item:nth-child(18),
+.sponsorship-item:nth-child(19),
+.sponsorship-item:nth-child(20) {
   width: 300px;
   height: 169px;
   grid-column: span 2;
